@@ -1,0 +1,30 @@
+-- Exercice 2 : Modification de colonnes
+
+-- 1. Augmenter la taille de nomSalle dans la table Salle (VARCHAR(20) à VARCHAR(30))
+ALTER TABLE Salle 
+MODIFY COLUMN nomSalle VARCHAR(30) NOT NULL;
+
+-- 2. Diminuer la taille de nomSegment dans la table Segment (VARCHAR(20) à VARCHAR(15))
+ALTER TABLE Segment 
+MODIFY COLUMN nomSegment VARCHAR(15) NOT NULL;
+
+-- 3. Tenter de diminuer la taille de nomSegment à VARCHAR(14) - CETTE COMMANDE VA ÉCHOUER
+-- ALTER TABLE Segment 
+-- MODIFY COLUMN nomSegment VARCHAR(14) NOT NULL;
+
+
+/* /* /* /*
+
+-- Vérification de la structure des tables modifiées
+DESCRIBE Salle;
+DESCRIBE Segment;
+
+-- Vérification du contenu pour comprendre pourquoi la réduction échoue
+SELECT indIP, nomSegment, LENGTH(nomSegment) as longueur, CHAR_LENGTH(nomSegment) as nb_caracteres
+FROM Segment;
+
+-- Vérification des valeurs les plus longues dans nomSegment
+SELECT nomSegment, LENGTH(nomSegment) as longueur
+FROM Segment
+ORDER BY LENGTH(nomSegment) DESC
+LIMIT 5;
