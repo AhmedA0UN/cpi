@@ -1,0 +1,5 @@
+ftp >  	dir => afficher la liste des fichiers
+­	get nom_fichier.txt => télécharger fichier
+	put nom_fichier.txt => envoie un fichier­­
+	
+	bye
