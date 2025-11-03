@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guide d'étude : Structure des systèmes téléinformatiques</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #2980b9;
+            margin-top: 30px;
+            border-left: 4px solid #3498db;
+            padding-left: 10px;
+        }
+        h3 {
+            color: #16a085;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+        .question {
+            background-color: #f8f9fa;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 5px;
+            border-left: 4px solid #3498db;
+        }
+        .answer {
+            background-color: #e8f4fc;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+        .glossary {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        .glossary th {
+            background-color: #3498db;
+            color: white;
+            padding: 12px;
+            text-align: left;
+        }
+        .glossary td {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+        .glossary tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        .note {
+            font-style: italic;
+            color: #7f8c8d;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Guide d'étude : Structure des systèmes téléinformatiques</h1>
+        
+        <div class="section">
+            <p>Ce guide est conçu pour réviser et approfondir la compréhension des concepts fondamentaux des systèmes téléinformatiques, des types de réseaux, des modes de transmission et des modèles de communication de référence.</p>
+        </div>
+
+        <h2>Questionnaire de révision</h2>
+        <div class="section">
+            <p class="note">Répondez aux questions suivantes en deux ou trois phrases, en vous basant exclusivement sur les informations fournies dans le contexte.</p>
+            
+            <div class="question">
+                <strong>1. Définissez ce qu'est un système téléinformatique et quel est son objectif principal.</strong>
+            </div>
+            <div class="answer">
+                <strong>Réponse :</strong> Un système téléinformatique est un ensemble d'équipements informatiques géographiquement distants, reliés entre eux par un réseau de communication. Son objectif principal est de permettre l'échange d'informations entre ces équipements.
+            </div>
+            
+            <div class="question">
+                <strong>2. Quelle est la différence fondamentale entre un Équipement Terminal de Traitement de Données (ETTD) et un Équipement Terminal de Circuit de Données (ETCD) ? Donnez un exemple pour chaque catégorie.</strong>
+            </div>
+            <div class="answer">
+                <strong>Réponse :</strong> Un ETTD est un équipement proche de l'utilisateur qui facilite l'accès au réseau, comme un PC ou un serveur. Un ETCD est un dispositif qui gère la connexion de l'ETTD à la ligne de communication, comme un modem ou une carte réseau.
+            </div>
+            
+            <div class="question">
+                <strong>3. Comparez un réseau local (LAN) et un réseau étendu (WAN) en termes de portée géographique et d'exemple.</strong>
+            </div>
+            <div class="answer">
+                <strong>Réponse :</strong> Un réseau local (LAN) couvre une zone géographique restreinte comme un bâtiment, offrant des vitesses élevées. Un réseau étendu (WAN) relie des réseaux sur de très grandes distances, à l'échelle mondiale, comme l'Internet.
+            </div>
+            
+            <div class="question">
+                <strong>4. Expliquez la distinction entre une liaison half-duplex et une liaison full-duplex.</strong>
+            </div>
+            <div class="answer">
+                <strong>Réponse :</strong> Une liaison half-duplex permet aux données de circuler dans les deux sens, mais pas simultanément ; chaque extrémité émet à son tour. Une liaison full-duplex permet une circulation bidirectionnelle et simultanée des données, chaque extrémité pouvant émettre et recevoir en même temps.
+            </div>
+            
+            <div class="question">
+                <strong>5. Comment une liaison asynchrone assure-t-elle que le récepteur peut correctement interpréter les données transmises de manière irrégulière ?</strong>
+            </div>
+            <div class="answer">
+                <strong>Réponse :</strong> Dans une liaison asynchrone, chaque caractère est précédé d'un bit de début (bit START) et terminé par un ou plusieurs bits de fin (bits STOP). Cela permet au récepteur de savoir précisément quand commence et se termine la transmission de chaque caractère, même en cas de silence prolongé.
+            </div>
+            
+            <div class="question">
+                <strong>6. Qu'est-ce que le débit binaire et comment est-il généralement mesuré ?</strong>
+            </div>
+            <div class="answer">
+                <strong>Réponse :</strong> Le débit binaire est une mesure de la performance qui correspond à la quantité de données, spécifiquement le nombre de bits, transmise par unité de temps. Il est généralement exprimé en bits par seconde (bit/s ou bps) et ses multiples (kbit/s, Mbit/s, etc.).
+            </div>
+            
+            <div class="question">
+                <strong>7. Énumérez trois des cinq facteurs qui peuvent impacter le délai de transmission total des données dans un réseau.</strong>
+            </div>
+            <div class="answer">
+                <strong>Réponse :</strong> Trois facteurs impactant le délai de transmission sont : le délai de propagation (temps de parcours du signal), le délai de traitement (temps nécessaire à un équipement pour traiter les données) et le délai de file d'attente (temps passé en attente avant la transmission).
+            </div>
+            
+            <div class="question">
+                <strong>8. Quel est le rôle principal de la couche Réseau (Niveau 3) dans le modèle OSI ?</strong>
+            </div>
+            <div class="answer">
+                <strong>Réponse :</strong> La couche Réseau du modèle OSI fournit les moyens pour l'interconnexion des réseaux et pour l'acheminement efficace des messages (appelés paquets) vers le bon destinataire. Sa fonction principale est le routage des paquets, en cherchant les meilleurs chemins à travers le réseau.
+            </div>
+            
+            <div class="question">
+                <strong>9. Définissez le concept d'encapsulation dans le contexte des modèles en couches.</strong>
+            </div>
+            <div class="answer">
+                <strong>Réponse :</strong> L'encapsulation est le processus qui consiste à envelopper les données d'un protocole d'une couche (par exemple, la couche Transport) dans les données d'un protocole de la couche immédiatement inférieure (par exemple, la couche Réseau).
+            </div>
+            
+            <div class="question">
+                <strong>10. Comment le modèle TCP/IP simplifie-t-il la structure du modèle OSI à sept couches ?</strong>
+            </div>
+            <div class="answer">
+                <strong>Réponse :</strong> Le modèle TCP/IP regroupe les fonctions des sept couches du modèle OSI en quatre couches. Les couches Application, Présentation et Session de l'OSI sont combinées en une seule couche Application, tandis que les couches Liaison et Physique sont regroupées dans la couche Interface réseau.
+            </div>
+        </div>
+
+        <h2>Questions de dissertation</h2>
+        <div class="section">
+            <p class="note">Ces questions nécessitent une analyse et une synthèse plus approfondies des informations contenues dans le document. Aucune réponse n'est fournie.</p>
+            
+            <div class="question">
+                <strong>1. Décrivez en détail les trois principales catégories d'éléments composant un système téléinformatique (ETTD, ETCD, Équipements d'Interconnexion). Pour chaque catégorie, donnez des exemples spécifiques mentionnés dans le texte et expliquez leur rôle dans la communication.</strong>
+            </div>
+            
+            <div class="question">
+                <strong>2. Analysez les différences et les complémentarités entre les réseaux LAN, MAN, WAN, WLAN et PAN. Discutez de leurs caractéristiques, de leur portée géographique respective et des scénarios d'utilisation typiques décrits dans le texte.</strong>
+            </div>
+            
+            <div class="question">
+                <strong>3. Expliquez de manière exhaustive les différents modes de transmission des données en abordant les trois aspects suivants : le sens des échanges (simplex, half-duplex, full-duplex), le nombre de bits envoyés simultanément (série, parallèle) et la synchronisation (synchrone, asynchrone).</strong>
+            </div>
+            
+            <div class="question">
+                <strong>4. Discutez en profondeur des critères de performance d'un réseau, en vous concentrant sur le débit binaire et le délai de transmission. Expliquez comment le délai de transmission total est calculé et quelles stratégies peuvent être mises en œuvre pour le réduire.</strong>
+            </div>
+            
+            <div class="question">
+                <strong>5. Présentez le modèle de référence OSI en décrivant la fonction principale de chacune de ses sept couches. Expliquez ensuite les concepts de "service", "protocole" et "encapsulation" qui sont fondamentaux pour comprendre le fonctionnement de ce modèle en couches.</strong>
+            </div>
+        </div>
+
+        <h2>Glossaire des termes clés</h2>
+        <div class="section">
+            <table class="glossary">
+                <tr>
+                    <th>Terme</th>
+                    <th>Définition</th>
+                </tr>
+                <tr>
+                    <td>Baud</td>
+                    <td>Unité de mesure correspondant à un symbole transmis par seconde. Un symbole peut être codé sur plusieurs bits.</td>
+                </tr>
+                <tr>
+                    <td>Couche</td>
+                    <td>Dans un modèle de communication, l'ensemble des sous-systèmes de même rang qui exercent une fonction spécifique. Une couche N fournit des services à la couche N+1 et utilise ceux de la couche N-1.</td>
+                </tr>
+                <tr>
+                    <td>Débit binaire</td>
+                    <td>Quantité de données (nombre de bits) transmise par unité de temps, généralement exprimée en bits par seconde (bit/s).</td>
+                </tr>
+                <tr>
+                    <td>Délai de transmission</td>
+                    <td>Le temps total nécessaire pour que les informations soient envoyées d'un point à un autre. Il inclut les délais de propagation, de transmission, de traitement, de file d'attente et de réseau.</td>
+                </tr>
+                <tr>
+                    <td>Encapsulation</td>
+                    <td>Processus consistant à envelopper les données d'un protocole d'une couche par les données d'un protocole de la couche immédiatement inférieure.</td>
+                </tr>
+                <tr>
+                    <td>ETCD (Équipement Terminal de Circuit de Données)</td>
+                    <td>Dispositif gérant l'accès des équipements terminaux aux lignes de communication, comme les modems et les cartes réseau.</td>
+                </tr>
+                <tr>
+                    <td>ETTD (Équipement Terminal de Traitement de Données)</td>
+                    <td>Équipement se trouvant à proximité des utilisateurs et facilitant l'accès au réseau, comme les PC, les serveurs et les appareils mobiles.</td>
+                </tr>
+                <tr>
+                    <td>LAN (Local Access Network)</td>
+                    <td>Réseau Local. Permet la communication entre équipements dans un espace géographique restreint, comme un bâtiment.</td>
+                </tr>
+                <tr>
+                    <td>Liaison asynchrone</td>
+                    <td>Mode de transmission où chaque caractère est émis de façon irrégulière, encadré par un bit de début (START) et un ou plusieurs bits de fin (STOP).</td>
+                </tr>
+                <tr>
+                    <td>Liaison full-duplex</td>
+                    <td>Liaison dans laquelle les données circulent de façon bidirectionnelle et simultanément.</td>
+                </tr>
+                <tr>
+                    <td>Liaison half-duplex</td>
+                    <td>Liaison dans laquelle les données circulent dans un sens ou l'autre, mais pas les deux simultanément.</td>
+                </tr>
+                <tr>
+                    <td>Liaison simplex</td>
+                    <td>Liaison dans laquelle les données circulent dans un seul sens, de l'émetteur vers le récepteur.</td>
+                </tr>
+                <tr>
+                    <td>Liaison synchrone</td>
+                    <td>Mode de transmission où l'émetteur et le récepteur sont cadencés à la même horloge, permettant une réception continue des informations.</td>
+                </tr>
+                <tr>
+                    <td>MAN (Metropolitan Area Network)</td>
+                    <td>Réseau Métropolitain. Relie plusieurs LAN situés dans une même zone urbaine étendue.</td>
+                </tr>
+                <tr>
+                    <td>Modèle OSI</td>
+                    <td>Modèle de référence (Open System Interconnection) structuré en sept couches, décrivant les fonctions nécessaires à la communication entre systèmes ouverts.</td>
+                </tr>
+                <tr>
+                    <td>Modèle TCP/IP</td>
+                    <td>Modèle de communication dominant, structuré en quatre couches (Application, Transport, Internet, Interface réseau), qui est la base de l'Internet actuel.</td>
+                </tr>
+                <tr>
+                    <td>PAN (Personal Area Network)</td>
+                    <td>Réseau Personnel. Couvre une zone très restreinte pour connecter des appareils personnels proches, souvent via des technologies comme Bluetooth.</td>
+                </tr>
+                <tr>
+                    <td>PDU (Protocol Data Unit)</td>
+                    <td>Unité de Données de Protocole. Formée d'un en-tête de protocole et d'une portion de SDU, elle est échangée entre entités homologues d'une même couche.</td>
+                </tr>
+                <tr>
+                    <td>Protocole</td>
+                    <td>Ensemble de règles et de conventions qui régissent l'échange de données entre les appareils connectés, spécifiant les formats de données et les procédures.</td>
+                </tr>
+                <tr>
+                    <td>Routeur</td>
+                    <td>Équipement d'interconnexion chargé du routage des données, assurant leur cheminement optimal à travers le réseau en fonction des adresses de destination.</td>
+                </tr>
+                <tr>
+                    <td>SAP (Service Access Point)</td>
+                    <td>Point d'accès à un service, identifié par une adresse unique, par lequel une couche N+1 accède aux services de la couche N.</td>
+                </tr>
+                <tr>
+                    <td>SDU (Service Data Unit)</td>
+                    <td>Unité de Données de Service. Données transmises d'une couche N+1 à une couche N, que la couche N doit acheminer pour le compte de la couche N+1.</td>
+                </tr>
+                <tr>
+                    <td>Système téléinformatique</td>
+                    <td>Ensemble d'équipements informatiques géographiquement distants, reliés entre eux par un réseau de communication pour l'échange d'informations.</td>
+                </tr>
+                <tr>
+                    <td>Transmission parallèle</td>
+                    <td>Transmission simultanée de N bits sur N voies différentes (par exemple, N fils).</td>
+                </tr>
+                <tr>
+                    <td>Transmission série</td>
+                    <td>Envoi d'une série de bits les uns à la suite des autres sur un même canal de transmission.</td>
+                </tr>
+                <tr>
+                    <td>WAN (Wide Area Network)</td>
+                    <td>Réseau Étendu. Relie des ordinateurs et des réseaux sur de très grandes distances, souvent à l'échelle mondiale.</td>
+                </tr>
+                <tr>
+                    <td>WLAN (Wireless Local Area Network)</td>
+                    <td>Réseau Local Sans Fil. Type de LAN qui utilise des ondes radio (comme le Wi-Fi) pour connecter des périphériques.</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
