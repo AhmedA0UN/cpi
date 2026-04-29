@@ -1,0 +1,4 @@
+TN	Tunisie	Tunis	162155	11582075
+FR	France	Paris	672015	68014000
+DE	Allemagne	Berlin	357588	83222442
+DZ	Algerie	Alger	2381741	44487616
