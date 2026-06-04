@@ -1,0 +1,33 @@
+1) alter table etudiant
+   add email varchar(60);
+
+2) alter table cours 
+   add crédits number;
+
+3) alter table etudiant 
+modify nom varchar(60);
+
+4) alter table etudiant 
+   modify nom varchar(60);
+
+5) alter table cours
+   rename column nom_cour to titre_cours;
+
+6) alter table etudiant drop column email
+
+7) alter table etudiant 
+   rename to student;
+
+8) alter table cours
+   add constraint p1 unique (titre_cours);
+
+9) alter tablr etudiant 
+   add column age number; // number ou int 
+
+10) alter table student
+ add constraint page check (age>=18 and age <=30);
+
+11) alter table cours 
+    rename to module;
+
+12) drop table inscription

@@ -1,0 +1,4 @@
+dir =­­­> lister les fichiers
+get nom_fichier =­­­> téléchager
+put nom_fichier =­­­> envoyer
+quit =­­­> fermer une session FTP

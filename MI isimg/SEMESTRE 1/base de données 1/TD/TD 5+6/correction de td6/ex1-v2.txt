@@ -1,0 +1,15 @@
+-- 1. Ajout des colonnes à la table Segment
+
+ALTER TABLE Segment ADD COLUMN nbsalle TINYINT(2) DEFAULT 0;
+ALTER TABLE Segment ADD COLUMN nbPoste TINYINT(2) DEFAULT 0;
+
+-- 2. Ajout de la colonne à la table Logiciel
+
+ALTER TABLE Logiciel ADD COLUMN nbInstall TINYINT(2) DEFAULT 0;
+
+-- 3. Ajout de la colonne à la table Poste
+
+ALTER TABLE Poste ADD COLUMN nblog TINYINT(2) DEFAULT 0;
+
+
+*/ Version détaillée avec chaque instruction séparé /*
